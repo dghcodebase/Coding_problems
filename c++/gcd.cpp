@@ -7,20 +7,35 @@ int main()
     cin>>n>>m;
     int i,j;
     j=1;
-    if ( n<=0 || m<=0)
+    if ( n<=0 || m<=0 )
     {
-        cout<<"enter a valid number ."
+        cout<<"enter a valid number ";
     }
-    else:
+    else
     {
-    for(i=1;i<=m;i++)
+
+    for( i=1; i<=n ;i++ )
     {
         if ( n%i==0 && m%i==0 )
         {
            j=i;
         }
     }
-    cout<<"gcd is "<<j;
+    cout<<"gcd is"<<j;
+       
+
+    //    for(i=n;i>=1;i--)
+    //    {
+    //         if ( n%i==0 && m%i==0 )
+    //         {   
+    //             cout<<i;
+    //             break;
+    //         }
+    //    }
+      
+
+
+
     }
 
 }
